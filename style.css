@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*.hero-image {
+
+
+  height: 500px; /* You must set a specified height 
+  background-position: center; /* Center the image 
+  background-repeat: no-repeat; /* Do not repeat the image 
+  background-size: cover; /* Redimensione a imagem de fundo para cobrir todo o contêiner 
+}*/
+
+
+.carousel-item{
+   height: 100vh;
+   background-size: cover;
+   background-position: 50% 0;
+}
+
+.bg-green {
+  background-color: #0d6d1e;
+}
+
+.bg-imagem {
+  background-image: url("image/ifpi.png");
+  background-repeat: repeat;
+}
+
+.fundo {
+  background-image: url("ifpi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
