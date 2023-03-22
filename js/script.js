@@ -9,7 +9,7 @@ window.addEventListener('scroll', function () {
 });
 
 $( document ).ready(function() {
-     setTimeout(carregar, 4000);
+     setTimeout(carregar, 3000);
 });
 
 function carregar() {
