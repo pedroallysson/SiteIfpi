@@ -1,0 +1,190 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.banner-image {
+   background: 
+   linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+   url('/image/campusteste.png');
+   background-size: cover;
+}
+
+
+
+
+.texto-nav {
+  list-style: none;
+  font-family: "Lora", sans-serif;
+  font-size: .8rem;
+  text-transform: uppercase;
+  text-decoration-color: #ffffff;
+}
+/*.hero-image {
+
+
+  height: 500px; /* You must set a specified height 
+  background-position: center; /* Center the image 
+  background-repeat: no-repeat; /* Do not repeat the image 
+  background-size: cover; /* Redimensione a imagem de fundo para cobrir todo o contêiner 
+}*/
+
+
+.carousel-item{
+   height: 100vh;
+   background-size: cover;
+   background-position: 50% 0;
+}
+
+.bg-green {
+  background-color: #0e5d1c;
+}
+
+.bg-imagem {
+  background-image: url("image/ifpi.png");
+  background-repeat: repeat;
+}
+
+.fundo {
+  background-image: url("ifpi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.kenburns-bottom {
+	-webkit-animation: kenburns-bottom 12s ease-out reverse both;
+	        animation: kenburns-bottom 12s ease-out reverse both;
+}
+
+
+@-webkit-keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+            transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+}
+@keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+            transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+}
+
+
+
+
+@mixin modal-fullscreen() {
+  padding: 0 !important;
+  
+  .modal-dialog {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  
+  .modal-content {
+    height: auto;
+    min-height: 100%;
+    border: 0 none;
+    border-radius: 0;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .modal-fullscreen-xs-down {
+    @include modal-fullscreen();
+  }
+}
+
+@media (max-width: 991px) {
+  .modal-fullscreen-sm-down {
+    @include modal-fullscreen();
+  }
+}
+
+@media (max-width: 1199px) {
+  .modal-fullscreen-md-down {
+    @include modal-fullscreen();
+  }
+}
+
+.modal-fullscreen {
+  @include modal-fullscreen();
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("image/campusteste.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+/* animacao de texto */
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
